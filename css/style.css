@@ -20,6 +20,7 @@
 }
 
 body {
+	background: #efd594;
 	text-align: center;
 	color: #192a2a;
 	font-size: 1.5em;
@@ -30,17 +31,50 @@ h1 {
 	color: white;
 	font-family: nexa_rust_sansblack, sans-serif;
 	font-size: 200px;;
-	letter-spacing: 10px;
-	height: 600px;
-	margin-top: 0;
-	
+	letter-spacing: 50px;
+	padding-top: 300px;
+
 }
 
 
 
 /* Main Styles -------------------------*/
 
-#main-header {
-	background: #b300b3 url('../img/Band Pic in Tube.jpg') no-repeat center;
-	background-size: cover;
+.main-header {
+	height: 900px;
+	margin-top: 0;
+	background:
+							#b300b3 url('../img/Band Pic in Tube.jpg') no-repeat center;
+
+}
+
+.main-header,
+.primary-content {
+	text-align: center;
+}
+
+.navigation {
+	background: #b300b3;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.primary-content {
+	border: 1px solid #633fe2;
+	width: 85%;
+	margin: 10px auto;
+	padding: 20px;
+}
+
+#main-footer {
+	background: url('../img/Name in Flowers.jpg') no-repeat center;
+	width: 100%;
+	height: 100px;
 }
