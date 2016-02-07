@@ -1,16 +1,15 @@
 /*Web Fonts ----------------------------*/
 
-
 @font-face {
-    font-family: 'nexa_rust_sansblack';
-    src: url('../fonts/NexaRustSans-Black-Free-webfont.eot');
-    src: url('../fonts/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
-         url('../fonts/NexaRustSans-Black-Free-webfont.woff') format('woff'),
-         url('../fonts/NexaRustSans-Black-Free-webfont.ttf') format('truetype'),
-         url('../fonts/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	    font-family: 'lane_-_narrowregular';
+	    src: url('../fonts/LANENAR_-webfont.eot');
+	    src: url('../fonts/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/LANENAR_-webfont.woff') format('woff'),
+	         url('../fonts/LANENAR_-webfont.ttf') format('truetype'),
+	         url('../fonts/LANENAR_-webfont.svg#lane_-_narrowregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
 	}
 
 /* Default Styles ----------------------*/
@@ -23,14 +22,15 @@
 
 
 h1 {
-	color: white;
-	font-family: nexa_rust_sansblack, sans-serif;
-	font-size: 200px;;
-	letter-spacing: 50px;
+	color: #f7e9c7;
+	font-family: 'lane_-_narrowregular', sans-serif;
+	font-size: 200px;
+	font-weight: 1000;
+	letter-spacing: 100px;
 	margin-top: 0;
 	text-align: center;
-	padding-top: 275px;
-	text-shadow: 5px 5px 10px rgba(0,0,0, .5);
+	padding-top: 300px;
+	text-shadow: 5px 5px 10px rgba(0,0,0, .8);
 
 }
 
@@ -54,9 +54,9 @@ h1 {
 }
 
 .navigation a {
-	font-family: nexa_rust_sansblack, sans-serif;
+	font-family: Lucida Bright,Georgia,sans-serif;
 	text-decoration: none;
-	color: white;
+	color: #f7e9c7;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-left: 15px;
@@ -67,7 +67,7 @@ h1 {
 /* Order Section -----------------------*/
 
 #order {
-	background: linear-gradient(0deg, #efd594 0%, #590059 80%);
+	background: linear-gradient(0deg, #efd594 0%, #590059 90%);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -106,7 +106,10 @@ body {
 }
 
 .primary-content {
+	background: #f4e2b6;
 	border: 1px solid #633fe2;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.5);
 	width: 85%;
 	margin: 10px auto;
 	padding: 20px;
@@ -129,7 +132,13 @@ body {
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
 
-/* Float Clearfix ------------------ */
+/* Link Style--------------------------*/
+
+body a {
+	text-decoration: none;
+}
+
+/* Float Clearfix ---------------------*/
 
 .group:after {
   content: "";
