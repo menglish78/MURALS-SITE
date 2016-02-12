@@ -51,36 +51,33 @@ h1 {
 	background: linear-gradient(0deg, #590059 0%, transparent 40%),
 							#b300b3 url('../img/Band Pic in Tube.jpg') no-repeat center;
 	background-size: cover;
+	width: 100%;
 }
 
 /* Navigation Bar ----------------------*/
 
-.navigation {
 
-}
 
 .navigation ul{
-	background: #590059;
+	background:	#590059;
 	padding-top: 15px;
 	padding-bottom: 15px;
+
 }
 
 .navigation li {
 	display: inline-block;
-	
+
 }
 
 .navigation a {
-	background: #520059;
+	background: #590059;
 	font-family: 'droid_serifbold',sans-serif;
-	text-decoration: none;
-	color: #f7e9c7;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-shadow: 2px 2px rgba(0,0,0, .8);
-	box-shadow: 0px 3px 2px rgba(0,0,0, .5);
 }
 
 /* Order Section -----------------------*/
@@ -100,12 +97,53 @@ h1 {
 
 #news li{
 	text-align: left;
-	padding-left: 20px;
-	padding-bottom: 5px;
+	margin: auto 50px;
 	font-size: .8em;
+	line-height: 2em;
+	list-style: disc;
 }
 
+
 /* Music Section -----------------------*/
+
+.passing-cloud,
+.violet-city {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.passing-cloud a,
+.violet-city a {
+	display: block;
+}
+
+.passing-cloud img,
+.violet-city img {
+	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
+}
+
+.passing-cloud {
+	float: left;
+}
+
+.violet-city {
+	float: right;
+}
+
+
+
+/* Videos Section -----------------------*/
+
+/* Store Section ------------------------*/
+
+#store img {
+	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
+}
+
 
 /* Shows Section -----------------------*/
 
@@ -117,6 +155,7 @@ h1 {
 
 img {
 	max-width: 100%;
+	margin-bottom: 20px;
 }
 
 body {
@@ -125,6 +164,11 @@ body {
 	color: #3b3b3b;
 	font-size: 1.5em;
 	font-family: 'droid_serifbold',sans-serif;
+	margin: 0 auto;
+}
+
+img{
+	max-width: 100%;
 }
 
 .main-header,
@@ -133,27 +177,40 @@ body {
 }
 
 .primary-content {
-	background: #f4e2b6;
-	border: 1px solid #633fe2;
+	background:	linear-gradient(180deg, #efd594 0%, transparent 15%),
+							linear-gradient(0deg, #efd594 0%, #f2dca5 30%),
+							#f2dca5;
 
-	box-shadow: 0 5px 5px rgba(0,0,0,.5);
-	width: 85%;
-	margin: 10px auto;
+	width:85%;
+	margin: auto;
 	padding: 20px;
 }
 
-.primary-content img {
-	width: 40%;
+#news,
+#music,
+#videos,
+#store,
+#shows,
+#contact {
+	padding: 5px;
+	margin: 5px;
+	border-top: 1px solid #590059;
+	padding-bottom: 30px;
 }
+
+
+
+
 
 
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #ecce83 0%, transparent 75%),
+	background: linear-gradient(180deg, #efd594 0%, transparent 75%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
+	padding-top: 20px;
 }
 
 #main-footer img {
@@ -162,13 +219,37 @@ body {
 
 /* Link Style--------------------------*/
 
-body a {
-	text-decoration: none;
+a:link {
+  color: #662e66;
+  text-decoration: none;
 }
 
+a:visited {
+  color: #767676;
+}
+
+a:hover {
+  color: #71c5e8;
+}
+
+a:active {
+  color: #24a4d8;
+}
+
+.navigation a:link {
+	color: #f7e9c7;
+}
+
+.navigation a:hover {
+	color: #71c5e8;
+}
+
+.navigation a:active {
+	color: #24a4d8;
+}
 /* Float Clearfix ---------------------*/
 
-.group:after {
+#music:after {
   content: "";
   display: table;
   clear: both;
