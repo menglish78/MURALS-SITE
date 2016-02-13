@@ -35,15 +35,14 @@
 h1 {
 	color: #f4e2b6;
 	font-family: 'archisticonormal', sans-serif;
-	font-size: 150px;
+	font-size: 9.375rem;
 	font-weight: lighter;
-	letter-spacing: 100px;
-	margin-top: 0;
+	letter-spacing: .5em;
+	margin: auto;
 	text-align: center;
 	padding-top: 300px;
 	text-shadow: 5px 5px 5px rgba(0,0,0, 1);
-
-}
+	}
 
 .main-header {
 	height: 500px;
@@ -66,7 +65,7 @@ h1 {
 }
 
 .navigation li {
-	display: inline-block;
+	display: inline-flex;
 
 }
 
@@ -83,7 +82,7 @@ h1 {
 /* Order Section -----------------------*/
 
 #order {
-	background: linear-gradient(0deg, #efd594 0%, #590059 90%);
+	background: linear-gradient(0deg, #d3d3d3 0%, #590059 90%);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -134,13 +133,16 @@ h1 {
 	float: right;
 }
 
-
-
 /* Videos Section -----------------------*/
+
+#videos iframe{
+	box-shadow:  0px 10px 5px rgba(0,0,0, .5);
+}
 
 /* Store Section ------------------------*/
 
 #store img {
+	
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
 
@@ -159,10 +161,10 @@ img {
 }
 
 body {
-	background: #efd594;
+	background: #d3d3d3;
 	text-align: center;
 	color: #3b3b3b;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-family: 'droid_serifbold',sans-serif;
 	margin: 0 auto;
 }
@@ -177,9 +179,9 @@ img{
 }
 
 .primary-content {
-	background:	linear-gradient(180deg, #efd594 0%, transparent 15%),
-							linear-gradient(0deg, #efd594 0%, #f2dca5 30%),
-							#f2dca5;
+	background:	linear-gradient(180deg, #d3d3d3 0%, transparent 15%),
+							linear-gradient(0deg, #d3d3d3 0%, #e0e0e0 30%),
+							#e0e0e0;
 
 	width:85%;
 	margin: auto;
@@ -206,7 +208,7 @@ img{
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #efd594 0%, transparent 75%),
+	background: linear-gradient(180deg, #d3d3d3 0%, transparent 75%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
@@ -215,6 +217,7 @@ img{
 
 #main-footer img {
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
+	border-radius: 10%;
 }
 
 /* Link Style--------------------------*/
@@ -253,4 +256,45 @@ a:active {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Media Queries ----------------------*/
+
+@media (max-width: 1105px) {
+	.primary-content {
+		width: 95%;
+	}
+	h1 {
+		font-size: 7rem;
+	}
+}
+
+@media (max-width: 860px) {
+	.main-header {
+		height: 300px;
+	}
+	.navigation li{
+	margin-bottom: 15px;
+	}
+	h1 {
+		font-size: 6rem;
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 710px) {
+	.primary-content {
+		width: 100%;
+		padding: 10px;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 3rem;
+	}
+
 }
