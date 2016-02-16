@@ -1,6 +1,19 @@
 /*Web Fonts ----------------------------*/
 
-	@font-face {
+@font-face {
+		font-family: 'sofia_prolight';
+		src: url('../SofiaProLight-webfont.eot');
+		src: url('../SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('../SofiaProLight-webfont.woff2') format('woff2'),
+				 url('../SofiaProLight-webfont.woff') format('woff'),
+				 url('../SofiaProLight-webfont.ttf') format('truetype'),
+				 url(../'SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+	/*@font-face {
 	    font-family: 'droid_serifbold';
 	    src: url('../fonts/DroidSerif-Bold-webfont.eot');
 	    src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +22,7 @@
 	         url('../fonts/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'archisticonormal';
@@ -71,7 +84,7 @@ h1 {
 
 .navigation a {
 	background: #590059;
-	font-family: 'droid_serifbold',sans-serif;
+	font-family: 'sofia_prolight',sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-left: 15px;
@@ -82,7 +95,7 @@ h1 {
 /* Order Section -----------------------*/
 
 #order {
-	background: linear-gradient(0deg, #d3d3d3 0%, #590059 90%);
+	background: linear-gradient(0deg, #f3f2cb 0%, #590059 90%);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -142,7 +155,7 @@ h1 {
 /* Store Section ------------------------*/
 
 #store img {
-	
+
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
 
@@ -161,11 +174,11 @@ img {
 }
 
 body {
-	background: #d3d3d3;
+	background: #f3f2cb;
 	text-align: center;
 	color: #3b3b3b;
 	font-size: 1.5rem;
-	font-family: 'droid_serifbold',sans-serif;
+	font-family: 'sofia_prolight',sans-serif;
 	margin: 0 auto;
 }
 
@@ -179,8 +192,8 @@ img{
 }
 
 .primary-content {
-	background:	linear-gradient(180deg, #d3d3d3 0%, transparent 15%),
-							linear-gradient(0deg, #d3d3d3 0%, #e0e0e0 30%),
+	background:	linear-gradient(180deg, #f3f2cb 0%, transparent 15%),
+							linear-gradient(0deg, #f3f2cb 0%, #f7f6db 30%),
 							#e0e0e0;
 
 	width:85%;
@@ -200,15 +213,10 @@ img{
 	padding-bottom: 30px;
 }
 
-
-
-
-
-
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #d3d3d3 0%, transparent 75%),
+	background: linear-gradient(180deg, #f3f2cb 0%, transparent 75%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
