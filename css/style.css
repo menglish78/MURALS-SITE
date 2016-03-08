@@ -97,11 +97,11 @@ h1 {
 /* News Section ------------------------*/
 
 #news li{
-	text-align: left;
-	margin: auto 200px;
+	text-align: left;;
+	margin: auto 50px;
 	font-size: .8em;
 	line-height: 1.5em;
-	list-style: disc;
+	list-style-type: disc;
 }
 
 
@@ -162,7 +162,7 @@ h1 {
 
 /* Shows Section -----------------------*/
 
-#shows p{
+#shows p {
 	font-size: .8em;
 }
 
@@ -302,16 +302,13 @@ a:active {
 
 /* Media Queries ----------------------*/
 
-@media (max-width: 1105px) {
-	.primary-content {
-		width: 95%;
-	}
+@media (max-width: 1105px) and (min-width: 861px) {
 	h1 {
 		font-size: 7rem;
 	}
 }
 
-@media (max-width: 860px) {
+@media (max-width: 860px) and (min-width: 711px) {
 	.main-header {
 		height: 300px;
 	}
@@ -324,11 +321,7 @@ a:active {
 	}
 }
 
-@media (max-width: 710px) {
-	.primary-content {
-		width: 100%;
-		padding: 10px;
-	}
+@media (max-width: 710px) and (min-width: 601px) {
 	h1 {
 		font-size: 5rem;
 	}
