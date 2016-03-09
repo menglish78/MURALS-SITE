@@ -41,18 +41,21 @@
 
       <div id="music">
         <h2 class="section-heads">M U S I C</h2>
-        <div class="passing-cloud">
-          <img src="img/On A Passing Cloud.jpg" alt="On A Passing Cloud" title="On A Passing Cloud Cover" />
-          <a href="http://themurals.bandcamp.com/album/on-a-passing-cloud" target="_blank">On A Passing Cloud</a>
+        <div id="covers">
+        <ul class="music-links">
+          <li>
+            <a class="album" href="http://themurals.bandcamp.com/album/on-a-passing-cloud" target="_blank"><img src="img/On A Passing Cloud.jpg" border="0" alt="On A Passing Cloud" title="On A Passing Cloud Cover" /></a>
+          </li>
+          <li>
+            <a class="album" href="http://themurals.bandcamp.com/album/violet-city-lantern" target="_blank"><img src="img/Violet City Lantern Cover.jpg" border="0" alt="Violet City Lantern" title="Violet City Lantern Cover" /></a>
+          </li>
+        </ul>
         </div>
-        <div class="violet-city">
-          <img src="img/Violet City Lantern Cover.jpg" alt="Violet City Lantern" title="Violet City Lantern Cover" />
-          <a href="http://themurals.bandcamp.com/album/violet-city-lantern" target="_blank">Violet City Lantern</a>
-        </div>
-        <div id="soundcloud">
-          <iframe width="75%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/197637531&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-        </div>
+          <div id="soundcloud">
+            <iframe width="75%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/197637531&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          </div>
       </div>
+
 
       <div id="videos">
         <h2 class="section-heads">V I D E O S</h2>
@@ -81,7 +84,7 @@
         <h2 class="section-heads">C O N T A C T</h2>
         <a href="mailto:music.themurals@gmail.com">music.themurals@gmail.com</a>
       </div>
-    
+
 
     <footer id="main-footer">
       <a href="https://www.facebook.com/music.murals/" target="_blank"><img src="img/facebook icon.png" alt="Facebook Logo" class="social-icon"></a>
@@ -99,9 +102,8 @@
 
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="libs/handlebars-v1.3.0.js"></script>
-    <script src="libs/ember.js"></script>
-    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="js/ember.prod.js"></script>
+
 
     <script src="dates.js"></script>
 

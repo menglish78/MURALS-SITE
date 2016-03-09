@@ -97,48 +97,37 @@ h1 {
 /* News Section ------------------------*/
 
 #news li{
-	text-align: left;;
+	text-align: center;
 	margin: auto 50px;
 	font-size: .8em;
 	line-height: 1.5em;
-	list-style-type: disc;
 }
 
 
 /* Music Section -----------------------*/
 
-#music {
-	text-align: center;
+ul.covers {
+    clear: both;
+    padding-left: 0px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.passing-cloud,
-.violet-city {
-	vertical-align: top;
+ul.covers li{
 	display: inline-block;
-	text-align: center;
-	width: 50%;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 20px;
-}
-
-.passing-cloud a,
-.violet-city a {
-	display: block;
-}
-
-.passing-cloud img,
-.violet-city img {
-	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
-}
-
-.passing-cloud {
+	padding: 0;
+	margin: 5px;
 	float: left;
 }
 
-.violet-city {
-	float: right;
-	margin-left: auto;
+ul.covers img {
+    border: none;
+    display: block;
+    margin: 0px auto;
+}
+
+.music-links img{
+	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
 
 #soundcloud iframe{
