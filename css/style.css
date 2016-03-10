@@ -106,27 +106,10 @@ h1 {
 
 /* Music Section -----------------------*/
 
-ul.covers {
-    clear: both;
-    padding-left: 0px;
-    margin: 0 auto;
-    width: 100%;
-}
 
-ul.covers li{
-	display: inline-block;
-	padding: 0;
-	margin: 5px;
-	float: left;
-}
-
-ul.covers img {
-    border: none;
-    display: block;
-    margin: 0px auto;
-}
-
-.music-links img{
+#covers img{
+	margin-left: 20px;
+	margin-right: 20px;
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
 
