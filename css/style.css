@@ -1,19 +1,6 @@
 /*Web Fonts ----------------------------*/
 
 @font-face {
-		font-family: 'sofia_prolight';
-		src: url('../SofiaProLight-webfont.eot');
-		src: url('../SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-				 url('../SofiaProLight-webfont.woff2') format('woff2'),
-				 url('../SofiaProLight-webfont.woff') format('woff'),
-				 url('../SofiaProLight-webfont.ttf') format('truetype'),
-				 url(../'SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-		font-weight: normal;
-		font-style: normal;
-
-}
-
-@font-face {
     font-family: 'archisticonormal';
     src: url('../fonts/Archistico_Simple-webfont.eot');
     src: url('../fonts/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +22,7 @@
 
 
 h1 {
-	color: #ffffcc;
+	color: #fdfcf4;
 	font-family: 'archisticonormal', sans-serif;
 	font-size: 9.375rem;
 	font-weight: lighter;
@@ -73,7 +60,7 @@ h1 {
 
 .navigation a {
 	background: #590059;
-	font-family: 'sofia_prolight',sans-serif;
+	font-family: 'Noto Serif', serif;
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-left: 15px;
@@ -84,7 +71,7 @@ h1 {
 /* Order Section -----------------------*/
 
 #order {
-	background: linear-gradient(0deg, #f3f2cb 0%, #590059 90%);
+	background: linear-gradient(0deg, #fdfcf4 0%, #590059 90%);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -147,11 +134,11 @@ img {
 }
 
 body {
-	background: #f3f2cb;
+	background: #fdfcf4;
 	text-align: center;
 	color: #3b3b3b;
 	font-size: 1.5rem;
-	font-family: 'sofia_prolight',sans-serif;
+	font-family: 'Noto Serif', serif;
 	margin: 0 auto;
 }
 
@@ -189,13 +176,13 @@ img{
 #music,
 #store,
 #contact {
-	background: #decbf3;
+	background: #ebe0f8;
 }
 
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #decbf3 0%, transparent 75%),
+	background: linear-gradient(180deg, #ebe0f8 0%, transparent 75%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
@@ -255,7 +242,7 @@ a:active {
 }
 
 .navigation a:link {
-	color: #f3f2cb;
+	color: #fdfcf4;
 }
 
 .navigation a:hover {
