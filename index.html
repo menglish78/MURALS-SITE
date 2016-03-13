@@ -64,8 +64,13 @@
 
       <div id="shows">
 
-        {{outlet}}
-        <!-- <h2 class="section-heads">S H O W S</h2> -->
+      <h2 class="section-heads">S H O W S</h2>
+<!-- 
+      {{#each model as |tourdate|}}
+        <p>{{tourdate.venue}}</p>
+        <p>{{tourdate.city}}</p>
+        <p>{{tourdate.date}}</p>
+      {{/each}} -->
 
         <!-- <p><a href="http://www.songkick.com/concerts/25554799-diane-coffee-at-zanzabar" target="_blank">Zanzabar</a><br />Louisville, KY<br />Feb 6</p>
         <p><a href="http://www.songkick.com/concerts/25834744-idiot-glee-at-als-bar" target="_blank">Al's Bar</a><br />Lexington, KY<br />Mar 13</p>
@@ -102,7 +107,8 @@
     <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
     <script src="js/soundcloud.js"></script>
     <script src="js/ember.prod.js"></script>
-  
+
+
 
 
   </body>
