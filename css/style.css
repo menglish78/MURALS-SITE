@@ -35,7 +35,7 @@ h1 {
 .main-header {
 	height: 500px;
 	margin-top: 0;
-	background: linear-gradient(0deg, #590059 0%, transparent 40%),
+	background: linear-gradient(0deg, #680783 0%, transparent 40%),
 							#b300b3 url('../img/Band Pic in Tube.jpg') no-repeat center;
 	background-size: cover;
 	width: 100%;
@@ -44,7 +44,7 @@ h1 {
 /* Navigation Bar ----------------------*/
 
 .navigation ul{
-	background:	#590059;
+	background:	#680783;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -54,7 +54,7 @@ h1 {
 }
 
 .navigation a {
-	background: #590059;
+	background: #680783;
 	font-family: 'Noto Serif', serif;
 	font-weight: normal;
 	letter-spacing: 2px;
@@ -66,7 +66,7 @@ h1 {
 /* Order Section -----------------------*/
 
 #order {
-	background: linear-gradient(0deg, #fdfcf4 0%, #590059 90%);
+	background: linear-gradient(0deg, #fdfcf4 0%, #680783 90%);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -183,7 +183,7 @@ img{
 	right: 2em;
 	text-decoration: none;
 	font-weight: bold;
-	background-color: #590059;
+	background-color: #680783;
 	box-shadow: 0px 5px 5px rgba(0,0,0, .5);
 	border-radius: 10%;
 	font-size: 12px;
@@ -192,11 +192,11 @@ img{
 }
 
 .go-top:hover {
-	background-color: #0059b4;
+	background-color: #79ddff;
 }
 
 .go-top:active {
-	background-color: #40B64A;
+	background-color: #0086b4;
 }
 
 #button a{
@@ -215,11 +215,11 @@ a:visited {
 }
 
 a:hover {
-  color: #0059b4;
+  color: #79ddff;
 }
 
 a:active {
-  color: #40B64A;
+  color: #0086b4;
 }
 
 .navigation a:link {
@@ -227,11 +227,11 @@ a:active {
 }
 
 .navigation a:hover {
-	color: #0059b4;
+	color: #79ddff;
 }
 
 .navigation a:active {
-	color: #40B64A;
+	color: #0086b4;
 }
 
 /* Float Clearfix ---------------------*/
