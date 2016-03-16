@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="toursApp">
   <head>
     <title>M U R A L S</title>
     <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+    <script src="js/angular.js"></script>
+    <script src="js/app/controller.js"></script>
   </head>
 
   <body>
@@ -65,7 +67,17 @@
 
       <div id="shows">
 
-      <h2 class="section-heads">S H O W S</h2>
+      <h2 class="section-heads" >S H O W S</h2>
+        <div ng-controller="TourDateCtrl">
+          <ul>
+            <li ng-repeat="date in tourDates">
+              <h4>{{date.venue}}</p>
+              <p>{{date.city}}</p>
+              <p>{{date.date}}</p>
+            </li>
+          </ul>
+        </div>
+
 <!--
       {{#each model as |tourdate|}}
         <p>{{tourdate.venue}}</p>
@@ -107,7 +119,7 @@
     <script src="js/scripts.js"></script>
     <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
     <script src="js/soundcloud.js"></script>
-    <script src="js/ember.prod.js"></script>
+    <!-- <script src="js/ember.prod.js"></script> -->
 
 
 
