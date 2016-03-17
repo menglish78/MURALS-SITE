@@ -25,7 +25,6 @@ h1 {
 	font-family: 'archisticonormal', sans-serif;
 	font-size: 9.375rem;
 	font-weight: lighter;
-	/*letter-spacing: .5em;*/
 	margin: auto;
 	text-align: center;
 	padding-top: 300px;
@@ -36,7 +35,7 @@ h1 {
 	height: 500px;
 	margin-top: 0;
 	background: linear-gradient(0deg, #680783 0%, transparent 40%),
-							#b300b3 url('../img/Band Pic in Tube.jpg') no-repeat center;
+							#680783 url('../img/Band Pic in Tube.jpg') no-repeat center;
 	background-size: cover;
 	width: 100%;
 }
@@ -103,6 +102,7 @@ h1 {
 
 #videos iframe{
 	box-shadow:  0px 10px 5px rgba(0,0,0, .5);
+  margin: 25px;
 }
 
 /* Store Section ------------------------*/
@@ -115,6 +115,11 @@ h1 {
 
 #shows p {
 	font-size: .8em;
+}
+
+#shows h4 {
+  font-weight: lighter;
+  text-decoration: underline;
 }
 
 /* Main Styles -------------------------*/

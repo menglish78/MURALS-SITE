@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+<html ng-app="toursApp">
   <head>
     <title>M U R A L S</title>
     <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+    <script src="js/angular.js"></script>
+    <script src="js/app/controller.js"></script>
   </head>
 
   <body>
@@ -55,6 +58,7 @@
         <h2 class="section-heads">V I D E O S</h2>
         <div class=.video-wrapper>
           <iframe width="750" height="422" src="https://www.youtube.com/embed/Ce31KBsqZM4" frameborder="0" allowfullscreen></iframe>
+          <iframe width="750" height="422" src="https://www.youtube.com/embed/3YLZseVXdPA" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -65,13 +69,19 @@
 
       <div id="shows">
 
-      <h2 class="section-heads">S H O W S</h2>
-<!--
-      {{#each model as |tourdate|}}
-        <p>{{tourdate.venue}}</p>
-        <p>{{tourdate.city}}</p>
-        <p>{{tourdate.date}}</p>
-      {{/each}} -->
+        <h2 class="section-heads">S H O W S</h2>
+        <div ng-controller="TourDateCtrl">
+          <ul>
+            <li ng-repeat="date in tourDates">
+              <h4>{{date.venue}}</h4>
+              <p>{{date.city}}</p>
+              <p>{{date.date}}</p>
+        
+            </li>
+          </ul>
+        </div>
+
+
 
         <!-- <p><a href="http://www.songkick.com/concerts/25554799-diane-coffee-at-zanzabar" target="_blank">Zanzabar</a><br />Louisville, KY<br />Feb 6</p>
         <p><a href="http://www.songkick.com/concerts/25834744-idiot-glee-at-als-bar" target="_blank">Al's Bar</a><br />Lexington, KY<br />Mar 13</p>
@@ -105,9 +115,10 @@
 
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/scripts.js"></script>
+
     <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
     <script src="js/soundcloud.js"></script>
-    <script src="js/ember.prod.js"></script>
+
 
 
 
