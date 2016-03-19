@@ -34,7 +34,7 @@ h1 {
 .main-header {
 	height: 500px;
 	margin-top: 0;
-	background: linear-gradient(0deg, #680783 0%, transparent 40%),
+	background: linear-gradient(0deg, #680783 0%, transparent 75%),
 							#680783 url('../img/Band Pic in Tube.jpg') no-repeat center;
 	background-size: cover;
 	width: 100%;
@@ -43,32 +43,31 @@ h1 {
 /* Navigation Bar ----------------------*/
 
 .navigation ul{
-	background:	#680783;
+	background: #680783;
 	padding-top: 15px;
 	padding-bottom: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .navigation li {
 	display: inline-flex;
+  border: 1px solid #fdfcf4;
+  box-shadow: 0px 5px 2.5px rgba(0,0,0, .5);
+
 }
 
 .navigation a {
 	background: #680783;
 	font-family: 'Noto Serif', serif;
-	font-weight: normal;
+	font-weight: lighter;
 	letter-spacing: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
-	text-shadow: 2px 2px rgba(0,0,0, .8);
+	text-shadow: 1px 1px rgba(0,0,0, .5);
 }
 
 /* Order Section -----------------------*/
-
-#order {
-	background: linear-gradient(0deg, #fdfcf4 0%, #680783 90%);
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
 
 #order img {
 	border-radius: 10px;
@@ -81,7 +80,7 @@ h1 {
 	text-align: center;
 	margin: auto 50px;
 	font-size: .8em;
-	line-height: 1.5em;
+	line-height: 2em;
 }
 
 /* Music Section -----------------------*/
@@ -93,7 +92,7 @@ h1 {
 }
 
 #soundcloud {
-	width: 75%;
+	width: 55%;
 	margin: auto;
 	box-shadow: 0px 10px 5px rgba(0,0,0, .5);
 }
@@ -138,12 +137,15 @@ body {
 	margin: 0 auto;
 }
 
+body url{
+  opacity: 0.4;
+}
+
 img{
 	max-width: 100%;
 }
 
-.main-header,
-.primary-content {
+.main-header {
 	text-align: center;
 }
 
@@ -154,7 +156,6 @@ img{
 #shows,
 #contact {
 	padding: 5px;
-	/*margin: 5px;*/
 	border-top: 1px solid #590059;
 	padding-bottom: 30px;
 }
@@ -162,17 +163,23 @@ img{
 #music,
 #store,
 #contact {
-	background: #ebe0f8;
+  background:#ebe0f8;
+}
+
+#order {
+  background: linear-gradient(0deg, #ebe0f8 0%, #680783 100%);
+  padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #ebe0f8 0%, transparent 90%),
+	background: linear-gradient(180deg, #ebe0f8 0%, transparent 100%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
-	padding-top: 20px;
+  border-top: none;
 }
 
 #main-footer img {
@@ -228,7 +235,7 @@ a:active {
 }
 
 .navigation a:link {
-	color: #fdfcf4;
+	color: 	#fdfcf4;
 }
 
 .navigation a:hover {
