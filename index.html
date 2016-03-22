@@ -22,6 +22,7 @@
         <li><a href="#videos">VIDEOS</a></li>
         <li><a href="#store">STORE</a></li>
         <li><a href="#shows">SHOWS</a></li>
+        <li><a href="#photos">PHOTOS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -67,27 +68,20 @@
         <a href="http://firetalkrecs.com/shop/" target="_blank"><img src="img/Fire Talk.jpg"></a>
       </div>
 
-      <div id="shows">
+      <div id="photos">
+        <h2 class="section-heads">P H O T O S</h2>
 
+      <div id="shows">
         <h2 class="section-heads">S H O W S</h2>
         <div ng-controller="TourDateCtrl">
           <ul>
             <li ng-repeat="date in tourDates">
-              <h4>{{date.venue}}</h4>
+              <a href="{{date.tickets}}">{{date.venue}}</a>
               <p>{{date.city}}</p>
               <p>{{date.date}}</p>
             </li>
           </ul>
         </div>
-
-        <!-- <p><a href="http://www.songkick.com/concerts/25554799-diane-coffee-at-zanzabar" target="_blank">Zanzabar</a><br />Louisville, KY<br />Feb 6</p>
-        <p><a href="http://www.songkick.com/concerts/25834744-idiot-glee-at-als-bar" target="_blank">Al's Bar</a><br />Lexington, KY<br />Mar 13</p>
-        <p><a href="http://www.songkick.com/concerts/26024648-idiot-glee-at-comet" target="_blank">The Comet</a><br />Cincinnati, OH<br />Mar 14</p>
-        <p><a href="http://www.songkick.com/concerts/25986263-murals-at-aurora" target="_blank">Aurora</a><br />Providence, RI<br />Mar 17</p>
-        <p><a href="http://www.songkick.com/concerts/25834734-idiot-glee-at-silent-barn" target="_blank">Silent Barn</a><br />Brooklyn, NY<br />Mar 18</p>
-        <p><a href="http://www.songkick.com/concerts/26024653-idiot-glee-at-ortliebs" target="_blank">Ortliebs</a><br />Philadelphia, PA<br />Mar 19</p>
-        <p><a href="http://www.songkick.com/concerts/26024658-idiot-glee-at-galaxy-hut" target="_blank">Galaxy Hut</a><br />Arlington, VA<br />Mar 21</p> -->
-
       </div>
 
       <div id="contact">

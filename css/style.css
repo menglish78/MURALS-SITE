@@ -121,6 +121,9 @@ h1 {
   text-decoration: underline;
 }
 
+/* Photos Section ----------------------*/
+
+
 /* Main Styles -------------------------*/
 
 img {
@@ -154,6 +157,7 @@ img{
 #videos,
 #store,
 #shows,
+#photos,
 #contact {
 	padding: 5px;
 	border-top: 1px solid #590059;
@@ -162,7 +166,7 @@ img{
 
 #music,
 #store,
-#contact {
+#shows {
   background:#ebe0f8;
 }
 
@@ -175,7 +179,7 @@ img{
 /* Footer ----------------------------*/
 
 #main-footer {
-	background: linear-gradient(180deg, #ebe0f8 0%, transparent 100%),
+	background: linear-gradient(180deg, #fdfcf4 0%, transparent 100%),
 							url('../img/Name in Flowers.jpg') no-repeat center;
 	width: 100%;
 	height: 200px;
