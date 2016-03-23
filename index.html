@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/angular.js"></script>
     <script src="js/app/controller.js"></script>
+    <script src="js/flickr.js"></script>
   </head>
 
   <body>
@@ -21,34 +23,34 @@
         <li><a href="#music">MUSIC</a></li>
         <li><a href="#videos">VIDEOS</a></li>
         <li><a href="#store">STORE</a></li>
-        <li><a href="#shows">SHOWS</a></li>
         <li><a href="#photos">PHOTOS</a></li>
+        <li><a href="#shows">SHOWS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
 
     <div class="new-album" id="order">
-      <a href="http://firetalkrecs.com/shop/murals-violet-city-lantern" target="_blank"><img src="img/murals_webslider.jpg"></a>
+      <a href="http://firetalkrecs.com/shop/murals-violet-city-lantern"><img src="img/murals_webslider.jpg"></a>
     </div>
 
       <div id="news">
         <h2 class="section-heads">N E W S</h2>
         <ul>
-          <li><a href="http://www.stereogum.com/1856961/murals-i-live-here/mp3s/" target="_blank">Stereogum</a> premiers 'Violet City Lantern' track 'I Live Here' </li>
-          <li><a href="http://www.spin.com/2016/01/murals-watching-in-the-dark-premiere-stream/" target="_blank">Spin.com</a> 'Watching in the Dark' premier</li>
-          <li>Stack mix on <a href="http://hypem.com/stack/72" target="_blank">Hypem</a> includes 'Long Bridge'</li>
-          <li><a href="http://www.thefader.com/2015/12/17/murals-long-bridge-premiere" target="_blank">The Fader</a> article premiering 'Violet City Lantern' track 'Long Bridge'</li>
-          <li>Interview with Brooklyn's <a href="http://convicts.nyc/convicts/murals/" target="_blank">Convicts Magazine</a> with a performance of new track 'Lunar Love'</li>
-          <li><a href="http://www.stereogum.com/1835063/murals-violet-city-lantern-video-stereogum-premiere/mp3s/" target="_blank">Stereogum</a> premiers track 'Violet City Lantern'</li>
-          <li><a href="http://www.stereogum.com/1096322/band-to-watch-murals/franchises/band-to-watch/" target="_blank">Stereogum</a> names Murals a 'Band to Watch'</li>
+          <li><a href="http://www.stereogum.com/1856961/murals-i-live-here/mp3s/">Stereogum</a> premiers 'Violet City Lantern' track 'I Live Here' </li>
+          <li><a href="http://www.spin.com/2016/01/murals-watching-in-the-dark-premiere-stream/">Spin.com</a> 'Watching in the Dark' premier</li>
+          <li>Stack mix on <a href="http://hypem.com/stack/72">Hypem</a> includes 'Long Bridge'</li>
+          <li><a href="http://www.thefader.com/2015/12/17/murals-long-bridge-premiere">The Fader</a> article premiering 'Violet City Lantern' track 'Long Bridge'</li>
+          <li>Interview with Brooklyn's <a href="http://convicts.nyc/convicts/murals/">Convicts Magazine</a> with a performance of new track 'Lunar Love'</li>
+          <li><a href="http://www.stereogum.com/1835063/murals-violet-city-lantern-video-stereogum-premiere/mp3s/">Stereogum</a> premiers track 'Violet City Lantern'</li>
+          <li><a href="http://www.stereogum.com/1096322/band-to-watch-murals/franchises/band-to-watch/">Stereogum</a> names Murals a 'Band to Watch'</li>
         </ul>
       </div>
 
       <div id="music">
         <h2 class="section-heads">M U S I C</h2>
         <div id="covers">
-            <a class="album" href="http://themurals.bandcamp.com/album/on-a-passing-cloud" target="_blank"><img src="img/On A Passing Cloud.jpg" border="0" alt="On A Passing Cloud" title="On A Passing Cloud Cover" /></a>
-            <a class="album" href="http://themurals.bandcamp.com/album/violet-city-lantern" target="_blank"><img src="img/Violet City Lantern Cover.jpg" border="0" alt="Violet City Lantern" title="Violet City Lantern Cover" /></a>
+            <a class="album" href="http://themurals.bandcamp.com/album/on-a-passing-cloud"><img src="img/On A Passing Cloud.jpg" border="0" alt="On A Passing Cloud" title="On A Passing Cloud Cover" /></a>
+            <a class="album" href="http://themurals.bandcamp.com/album/violet-city-lantern"><img src="img/Violet City Lantern Cover.jpg" border="0" alt="Violet City Lantern" title="Violet City Lantern Cover" /></a>
         </div>
         <div id="soundcloud"></div>
 
@@ -65,11 +67,20 @@
 
       <div id="store">
         <h2 class="section-heads">S T O R E</h2>
-        <a href="http://firetalkrecs.com/shop/" target="_blank"><img src="img/Fire Talk.jpg"></a>
+        <a href="http://firetalkrecs.com/shop/"><img src="img/Fire Talk.jpg"></a>
       </div>
 
       <div id="photos">
         <h2 class="section-heads">P H O T O S</h2>
+        <p>Search for photos of the band:</p>
+          </div>
+          <ul>
+            <li><button>Murals</button></li>
+          </ul>
+          <div id="flickr-photos">
+
+          </div>
+        </div>
 
       <div id="shows">
         <h2 class="section-heads">S H O W S</h2>
@@ -91,12 +102,12 @@
 
 
     <footer id="main-footer">
-      <a href="https://www.facebook.com/music.murals/" target="_blank"><img src="img/facebook icon.png" alt="Facebook Logo" class="social-icon"></a>
-      <a href="https://www.instagram.com/_murals/" target="_blank"><img src="img/instagram icon.png" alt="Instagram Logo" class="social-icon"></a>
-      <a href="http://themurals.bandcamp.com/" target="_blank"><img src="img/band camp.png" alt="Bandcamp Logo" class="social-icon"></a>
-      <a href="https://soundcloud.com/firetalk" target="_blank"><img src="img/soundcloud icon.png" alt="Soundcloud Logo" class="social-icon"></a>
-      <a href="https://open.spotify.com/artist/7xuwd5u8CiKA8SzzkERbwi" target="_blank"><img src="img/spotify icon.png" alt="Spotify Logo" class="social-icon"></a>
-      <a href="https://itunes.apple.com/us/artist/murals/id218996482" target="_blank"><img src="img/itunes.png" alt="iTunes Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/music.murals/"><img src="img/facebook icon.png" alt="Facebook Logo" class="social-icon"></a>
+      <a href="https://www.instagram.com/_murals/"><img src="img/instagram icon.png" alt="Instagram Logo" class="social-icon"></a>
+      <a href="http://themurals.bandcamp.com/"><img src="img/band camp.png" alt="Bandcamp Logo" class="social-icon"></a>
+      <a href="https://soundcloud.com/firetalk"><img src="img/soundcloud icon.png" alt="Soundcloud Logo" class="social-icon"></a>
+      <a href="https://open.spotify.com/artist/7xuwd5u8CiKA8SzzkERbwi"><img src="img/spotify icon.png" alt="Spotify Logo" class="social-icon"></a>
+      <a href="https://itunes.apple.com/us/artist/murals/id218996482"><img src="img/itunes.png" alt="iTunes Logo" class="social-icon"></a>
 
       <div id="button">
         <a href="#" class="go-top">Back to Top</a>
@@ -104,11 +115,13 @@
 
     </footer>
 
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
     <script src="js/scripts.js"></script>
 
     <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
     <script src="js/soundcloud.js"></script>
+
+
 
   </body>
 </html>

@@ -123,6 +123,13 @@ h1 {
 
 /* Photos Section ----------------------*/
 
+button {
+  background: #680783;
+  box-shadow: 0px 5px 5px rgba(0,0,0, .5);
+  color: #fdfcf4;
+  border: none;
+}
+
 
 /* Main Styles -------------------------*/
 
