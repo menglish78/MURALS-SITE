@@ -1,4 +1,4 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
   $('button').click(function() {
     var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
@@ -20,4 +20,4 @@
     $.getJSON(flickrAPI, flickrOptions, displayPhotos);
   });
 
-// });
+});
